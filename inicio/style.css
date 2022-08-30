@@ -7,65 +7,21 @@
 body {
     width: auto;
     height: 100vh;
-    background: #ff0000;
     font-family: 'Lexend Deca', sans-serif;
 }
 
 /* index - barra de Inicio - footer */
 
+
 #inicio {
-    height: 100px;
-    width: 100%;
-    /* background: #040d50; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 35px;
+    height: auto;
+    /* width: 100vw; */
+    background: #000;
+    font-family: 'Lexend Deca', sans-serif;
 }
-
-.linkinicio a {
-    text-decoration: none;
-    color: #fcfaee;
-    letter-spacing: -8px;
-    font-size: 30px;
-    transition: .3s linear;
-
-}
-
-.linkinicio a:hover {
-    font-size: 33px;
-    text-shadow: 0 0 10px #fff,
-        0 0 20px #fff,
-        0 0 40px #fff;
-    letter-spacing: .1em;
-}
-
-#linkenlaces ul {
-    width: 800px;
-    /* background: white; */
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#linkenlaces li a {
-    color: #fcfaee;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
-    transition: .2s linear;
-
-}
-
-#linkenlaces a:hover {
-    color: #000;
-}
-
 
 footer {
-    width: 100vw;
+    /* width: 100vw; */
     height: auto;
     background: #000000;
     display: flex;
@@ -74,6 +30,7 @@ footer {
     color: #fcfaee;
     padding: 20px 35px;
     /* flex-wrap: wrap; */
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 footer h6 {
@@ -121,9 +78,22 @@ footer h6 {
 
 /* fin de barra de inicio - footer */
 
+/* inicio main */
+main{
+    width: 100%;
+    background: #5e5d5d;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fcfaee;
+
+}
+/* fin main */
+
 /* inicio de pagina de inicio */
 
-main {
+#contenidoResena {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,7 +110,6 @@ main {
 #reseña {
     /* background: skyblue; */
     width: 60%;
-    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -162,10 +131,10 @@ main {
 }
 
 #reseña a {
-    width: 110px;
+    width: 120px;
     text-decoration: none;
     background: #fcfaee;
-    border-radius: 1.5rem;
+    border-radius: 6px;
     text-align: center;
     font-weight: bold;
     padding: 10px 7px;
@@ -177,7 +146,7 @@ main {
 }
 
 #reseña a:hover {
-    width: 125px;
+    width: 140px;
     color: #fcfaee;
     background: #000;
     letter-spacing: .2rem;
@@ -418,7 +387,7 @@ input:valid~label {
     width: 0%;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(to left, #273c55, #141E30);
+    background: linear-gradient(to left, #5d6369, #191f2b);
     transition: .5s ease width;
 }
 
@@ -426,12 +395,11 @@ form input:focus~.barra::before {
     width: 100%;
 }
 
-button {
-    font-family: 'Lexend Deca', sans-serif;
+.buttonreg {
     letter-spacing: .1em;
     text-align: center;
     display: block;
-    width: 60%;
+    width: 75%;
     margin: 10px auto;
     color: #000;
     height: 40px;
@@ -439,19 +407,19 @@ button {
     cursor: pointer;
     background: #fcfaee;
     border: none;
-    border-radius: 20px;
+    border-radius: 6px;
     font-weight: bold;
     transition: .5s linear;
 }
 
-button:hover {
+.buttonreg:hover {
     letter-spacing: .2em;
     text-shadow: 0 0 10px #fff,
         0 0 10px #fff,
         0 0 20px #fff;
     background: #000;
     color: #fcfaee;
-    width: 80%;
+    width: 85%;
 }
 
 @media screen and (max-width:900px) {
@@ -491,10 +459,48 @@ button:hover {
 }
 
 .datosencuentranos{
-    width: 800px;
     height: auto;
     text-align: center;
-    padding: 20px;
+    /* background: red; */
     margin: 20px 0 45px 0;
 }
 
+.titcontact{
+    font-weight: bolder;
+    font-size: 50px;
+    margin: 30px 0;
+    /* background: yellow; */
+}
+
+#encuentranos a{
+    color: #fcfaee;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .4s linear;
+}
+
+#encuentranos a:hover{
+    background: linear-gradient(to top, #5d6369, #000000) ;
+    border-radius: 6px;
+    letter-spacing: 3px;
+}
+
+
+.linkcontact{
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+
+.subcontact{
+    margin: 40px 0 10px 0;
+    padding: 10px 0 10px 0;
+    font-weight: bold;
+}
+
+.datosencuentranos ul{
+    list-style: none;
+}
+
+.listaubi{
+    margin: 15px 0 15px 0;
+}
